@@ -1,370 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Never miss what matters. Persist.Live is a context-aware productivity assistant with voice interaction that unifies calendar management, task tracking, and escalating reminders.">
-    <meta name="keywords" content="productivity assistant, calendar management, task tracking, voice assistant, AI assistant, smart reminders">
-    <meta name="author" content="Persist.Live">
+    <title>Persist.Live - The Assistant That Actually Calls You</title>
+    <meta name="description"
+        content="Never miss what matters again. Persist.Live is the smart assistant that knows your schedule and calls you when it's important.">
 
-    <!-- Open Graph / Social Media -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Persist.Live - Never Miss What Matters">
-    <meta property="og:description" content="The AI assistant that actually calls you. Context-aware productivity with voice interaction.">
-    <meta property="og:url" content="https://persist.live">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Persist.Live - Never Miss What Matters">
-    <meta name="twitter:description" content="The AI assistant that actually calls you. Context-aware productivity with voice interaction.">
-
-    <title>Persist.Live - Never Miss What Matters</title>
-
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔔</text></svg>">
-
-    <!-- Pure.css - Lightweight responsive framework (4KB) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css">
-
-    <!-- Custom Stylesheet -->
+    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Google Analytics - Replace with your tracking ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-XXXXXXXXXX');
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔔</text></svg>">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Persist.Live",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "iOS, Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "The AI assistant that actually calls you. Context-aware productivity with voice interaction."
+    }
     </script>
 </head>
+
 <body>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#hero" class="logo">
-                Persist<span class="logo-dot">.</span><span class="logo-live">Live</span>
-            </a>
+            <a href="#" class="logo">Persist<span>.Live</span></a>
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#faq">FAQ</a>
-                <a href="#contact">Contact</a>
-                <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
-                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="10" cy="10" r="4" fill="currentColor"/>
-                        <path d="M10 1V3M10 17V19M19 10H17M3 10H1M16.364 16.364L14.95 14.95M5.05 5.05L3.636 3.636M16.364 3.636L14.95 5.05M5.05 14.95L3.636 16.364" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" fill="currentColor"/>
-                    </svg>
-                </button>
+                <a href="blog/index.html">Blog</a>
+                <a href="#waitlist" class="btn btn-primary" style="padding: 0.5rem 1.5rem; font-size: 0.9rem;">Join
+                    Waitlist</a>
             </div>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">Launching Q4 2025</div>
-                <h1 class="hero-title">Never Miss<br/>What Matters</h1>
+                <div class="hero-badge">🚀 Launching Q4 2025</div>
+                <h1 class="hero-title">The Assistant That <br><span class="text-gradient">Actually Calls You</span></h1>
                 <p class="hero-subtitle">
-                    The AI assistant that <strong>actually calls you.</strong><br/>
-                    Context-aware productivity with voice interaction.
+                    Stop missing important events. We combine all your calendars and call your phone when you really
+                    need to pay attention.
                 </p>
-                <div class="hero-cta">
-                    <a href="#waitlist" class="btn btn-primary btn-large">
-                        Join Waitlist
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </a>
-                    <a href="#how-it-works" class="btn btn-secondary btn-large">How It Works</a>
+                <div class="hero-actions">
+                    <a href="#waitlist" class="btn btn-primary">Get Early Access</a>
+                    <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
                 </div>
-                <div class="hero-platforms">
-                    <span class="platform-tag">iOS</span>
-                    <span class="platform-tag">Android</span>
-                    <span class="platform-tag">WhatsApp</span>
-                </div>
+                <p style="font-size: 0.9rem; opacity: 0.6;">Available on iOS & Android</p>
             </div>
         </div>
-        <div class="hero-gradient"></div>
     </section>
 
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section id="features" class="section">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Everything you need to stay on track</h2>
-                <p class="section-subtitle">Deep contextual awareness meets proactive assistance</p>
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="text-gradient">Supercharge Your Day</h2>
+                <p>Simple tools to keep you on track, without the stress.</p>
             </div>
 
-            <div class="bento-grid">
-                <div class="bento-item bento-large featured">
-                    <div class="bento-content">
-                        <span class="feature-label">Game Changer</span>
-                        <h3>Escalating Reminders</h3>
-                        <p>Push notification → Alarm → Phone Call. The only assistant that ensures you never miss critical events.</p>
-                    </div>
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card large">
+                    <span class="feature-icon">📞</span>
+                    <h3>Proactive Notifications</h3>
+                    <p>We don't just wait. We escalate: <strong>15m</strong> before (Push), <strong>10m</strong> before
+                        (Alarm), and <strong>5m</strong> before (Call). Fully configurable, so you <strong>won't miss
+                            any alerts</strong>.</p>
                 </div>
 
-                <div class="bento-item">
-                    <div class="bento-content">
-                        <h3>Unified Calendar</h3>
-                        <p>Sync Google, Outlook, and Apple into one intelligent view.</p>
-                    </div>
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <span class="feature-icon">🗓️</span>
+                    <h3>All Calendars, One Place</h3>
+                    <p>Google, Outlook, iCloud. We bring them all together so you never double-book yourself again.</p>
                 </div>
 
-                <div class="bento-item">
-                    <div class="bento-content">
-                        <h3>Smart Tasks</h3>
-                        <p>Auto-block time for deadlines based on your patterns.</p>
-                    </div>
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <span class="feature-icon">🧠</span>
+                    <h3>Smart Assistant</h3>
+                    <p>Just talk to us. "Clear my afternoon" or "Schedule a call with mom". We handle the details.</p>
                 </div>
 
-                <div class="bento-item bento-tall">
-                    <div class="bento-content">
-                        <h3>Voice Interaction</h3>
-                        <p>Natural conversation with your AI assistant. Add tasks, reschedule meetings, and get updates—all hands-free.</p>
-                    </div>
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <span class="feature-icon">🔋</span>
+                    <h3>Knows Your Energy</h3>
+                    <p>We learn when you work best and help you schedule hard tasks during your peak energy times.</p>
                 </div>
 
-                <div class="bento-item">
-                    <div class="bento-content">
-                        <h3>Context-Aware AI</h3>
-                        <p>Learns your work patterns and energy peaks.</p>
-                    </div>
-                </div>
-
-                <div class="bento-item">
-                    <div class="bento-content">
-                        <h3>Multi-Platform</h3>
-                        <p>iOS, Android, and WhatsApp integration.</p>
-                    </div>
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <span class="feature-icon">🔒</span>
+                    <h3>Private & Secure</h3>
+                    <p>Your data is yours. We use bank-level encryption to keep your schedule safe.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
+    <!-- How It Works -->
+    <section id="how-it-works" class="section" style="background: rgba(255,255,255,0.02);">
         <div class="container">
-            <h2 class="section-title">How It Works</h2>
-            <p class="section-subtitle">Three simple steps to never miss what matters</p>
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2>As Easy As 1-2-3</h2>
+            </div>
 
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
                     <div class="step-content">
                         <h3>Connect Your Calendars</h3>
-                        <p>Link Google, Outlook, and Apple calendars in seconds. Persist.Live syncs everything into one unified view with intelligent conflict resolution.</p>
+                        <p>Link your existing Google, Outlook, or Apple calendars in seconds. We verify everything
+                            instantly.</p>
                     </div>
                 </div>
-
                 <div class="step">
                     <div class="step-number">2</div>
                     <div class="step-content">
-                        <h3>Talk to Your Assistant</h3>
-                        <p>Use voice or text to manage your schedule. Add tasks, reschedule meetings, set priorities—your AI assistant understands context and learns your preferences.</p>
+                        <h3>Tell Us What Matters</h3>
+                        <p>Mark specific events as "Critical". These are the ones you absolutely cannot miss.</p>
                     </div>
                 </div>
-
                 <div class="step">
                     <div class="step-number">3</div>
                     <div class="step-content">
-                        <h3>Never Miss What Matters</h3>
-                        <p>Receive proactive reminders that escalate from push notifications to alarms to phone calls. Stay on top of what's important, effortlessly.</p>
+                        <h3>Relax & Focus</h3>
+                        <p>Go about your day. If a critical event is coming up and you haven't checked in, we'll call
+                            you.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Waitlist Section -->
-    <section id="waitlist" class="waitlist">
-        <div class="container">
-            <div class="waitlist-content">
-                <h2 class="section-title">Join the Waitlist</h2>
-                <p class="section-subtitle">Be among the first to experience Persist.Live when we launch in Q4 2025</p>
-
-                <form id="waitlistForm" class="waitlist-form">
-                    <div class="form-group">
-                        <input type="email" id="waitlist-email" name="email" placeholder="Enter your email" required>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" id="waitlist-name" name="name" placeholder="Your name (optional)">
-                        </div>
-
-                        <div class="form-group">
-                            <select id="waitlist-profession" name="profession">
-                                <option value="">Select profession (optional)</option>
-                                <option value="executive">Executive</option>
-                                <option value="manager">Manager</option>
-                                <option value="entrepreneur">Entrepreneur</option>
-                                <option value="consultant">Consultant</option>
-                                <option value="freelancer">Freelancer</option>
-                                <option value="professional">Professional</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="form-checkboxes">
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="notify_ios" checked>
-                            <span>Notify me when iOS launches</span>
-                        </label>
-                        <label class="checkbox-label">
-                            <input type="checkbox" name="interested_android">
-                            <span>I'm interested in Android</span>
-                        </label>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-large">
-                        <span class="btn-text">Join Waitlist</span>
-                        <span class="btn-loading">Joining...</span>
-                    </button>
-
-                    <div class="form-message"></div>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
+    <section id="pricing" class="section">
         <div class="container">
-            <h2 class="section-title">Pricing</h2>
-            <p class="section-subtitle">Simple, transparent pricing launching Q4 2025</p>
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <h2 class="text-gradient">Simple, Transparent Pricing</h2>
+                <p>Start with a <strong>7-day free trial</strong>. Cancel anytime.</p>
+            </div>
 
-            <div class="pricing-card">
-                <div class="pricing-tag">Coming Soon</div>
-                <h3>Launch Pricing</h3>
-                <p>We're finalizing our pricing strategy to ensure maximum value for busy professionals.</p>
-                <ul class="pricing-features">
-                    <li>✓ Free tier with essential features</li>
-                    <li>✓ Premium features for power users</li>
-                    <li>✓ No hidden fees</li>
-                    <li>✓ Cancel anytime</li>
-                </ul>
-                <p class="pricing-note"><strong>Early waitlist members get special launch pricing</strong></p>
+            <div class="pricing-grid">
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Premium</h3>
+                        <div class="price">$9.99<span>/mo</span></div>
+                        <p>For getting organized.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ <strong>100</strong> Voice Minutes</li>
+                        <li>✅ Push & Alarm Reminders</li>
+                        <li>✅ Unlimited Calendar Sync</li>
+                        <li>❌ Phone Call Escalation</li>
+                    </ul>
+                    <a href="#waitlist" class="btn btn-secondary full-width">Start Free Trial</a>
+                </div>
+
+                <!-- Pro Plan (Recommended) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">$19.99<span>/mo</span></div>
+                        <p>For the busy professional.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ <strong>225</strong> Voice Minutes</li>
+                        <li>✅ <strong>Phone Call Escalation</strong> (5/wk)</li>
+                        <li>✅ Smart Rescheduling</li>
+                    </ul>
+                    <a href="#waitlist" class="btn btn-primary full-width">Start Free Trial</a>
+                </div>
+
+                <!-- Max Plan -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Max</h3>
+                        <div class="price">$29.99<span>/mo</span></div>
+                        <p>For the power user.</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>✅ <strong>500</strong> Voice Minutes</li>
+                        <li>✅ <strong>Unlimited</strong> Phone Calls</li>
+                        <li>✅ Unlimited Context History</li>
+                    </ul>
+                    <a href="#waitlist" class="btn btn-secondary full-width">Start Free Trial</a>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem; opacity: 0.8;">
+                <p><strong>Need more talk time?</strong> You can buy extra voice credits anytime inside the app.</p>
+                <p style="font-size: 0.9rem; margin-top: 0.5rem; color: var(--text-muted);">Credits never expire.</p>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
+    <!-- Waitlist -->
+    <section id="waitlist" class="section">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="waitlist-container">
+                <h2>Join the Future of Productivity</h2>
+                <p>Be the first to get access when we launch.</p>
 
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What makes Persist.Live different from other productivity apps?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Persist.Live combines three unique advantages:</p>
-                        <ol>
-                            <li style="margin-bottom: var(--spacing-xs); color: var(--text-secondary);"><strong style="color: var(--text-primary);">Escalating reminders</strong> that progress from push notifications to alarms to actual phone calls—ensuring you never miss critical events</li>
-                            <li style="margin-bottom: var(--spacing-xs); color: var(--text-secondary);"><strong style="color: var(--text-primary);">Deep contextual awareness</strong> through our RAG system that learns your patterns, energy levels, and preferences</li>
-                            <li style="margin-bottom: var(--spacing-xs); color: var(--text-secondary);"><strong style="color: var(--text-primary);">True multi-calendar unification</strong> with intelligent conflict resolution</li>
-                        </ol>
-                        <p>Most apps just aggregate; we intelligently assist.</p>
+                <form class="waitlist-form">
+                    <div class="input-group">
+                        <input type="email" class="input-field" placeholder="Enter your email address" required>
                     </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Which calendars do you support?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We support Google Calendar, Microsoft Outlook/Office 365, and Apple iCloud Calendar. You can connect multiple accounts from each provider and manage them all in one unified view. Our intelligent sync engine polls every 30 minutes with webhook support for instant updates.</p>
+                    <div class="input-group">
+                        <input type="text" class="input-field" placeholder="Your Name (Optional)">
                     </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>How does the phone call reminder work?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>When you have an important event and haven't shown signs of preparation (checked your calendar, acknowledged the notification, etc.), Persist.Live escalates reminders: First, a push notification. If unacknowledged after 5 minutes, an alarm sounds on your device. If still no response, we place an actual phone call to ensure you're aware. You control which events get this treatment and can customize the escalation timing.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>When will the Android app be available?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>We're launching iOS first in Q4 2025, with Android development beginning immediately after. Native Android app is expected in Q1 2026. Join the waitlist and select "Interested in Android" to get early access when it's ready.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What about WhatsApp integration? Do I need to install an app?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>WhatsApp integration is coming in a future update. Once available, you'll be able to interact with your Persist.Live assistant directly through WhatsApp—no separate app installation required for basic functionality. The native apps will still offer the full feature set including voice interaction and escalating reminders.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Is my data secure?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely. We use enterprise-grade security with end-to-end encryption for all calendar and task data. OAuth tokens are encrypted at rest. We implement Row Level Security (RLS) in our database, ensuring your data is isolated and accessible only to you. We're SOC 2 compliant and never sell or share your data. You can delete your account and all associated data at any time.</p>
-                    </div>
-                </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Join Waitlist</button>
+                </form>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="section-subtitle">Have questions? We'd love to hear from you</p>
-
-            <form id="contactForm" class="contact-form">
-                <div class="form-row">
-                    <div class="form-group">
-                        <input type="text" id="contact-name" name="name" placeholder="Your name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" id="contact-email" name="email" placeholder="Your email" required>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <textarea id="contact-message" name="message" rows="5" placeholder="Your message (minimum 10 characters)" required></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">
-                    <span class="btn-text">Send Message</span>
-                    <span class="btn-loading">Sending...</span>
-                </button>
-
-                <div class="form-message"></div>
-            </form>
         </div>
     </section>
 
@@ -373,47 +248,43 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="logo">Persist<span class="logo-dot">.</span><span class="logo-live">Live</span></div>
-                    <p>Never miss what matters.</p>
+                    <a href="#" class="logo">Persist<span>.Live</span></a>
+                    <p style="margin-top: 1rem; font-size: 0.9rem;">
+                        The context-aware assistant that ensures you never miss what matters.
+                    </p>
                 </div>
 
                 <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <ul>
-                            <li><a href="#features">Features</a></li>
-                            <li><a href="#how-it-works">How It Works</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#waitlist">Join Waitlist</a></li>
-                        </ul>
-                    </div>
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="blog/index.html">Blog</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <ul>
-                            <li><a href="#faq">FAQ</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="mailto:persistlive.ai@gmail.com">persistlive.ai@gmail.com</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
 
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="privacy.html">Privacy Policy</a></li>
-                            <li><a href="terms.html">Terms of Service</a></li>
-                        </ul>
-                    </div>
+                <div class="footer-links">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:persistlive.ai@gmail.com">persistlive.ai@gmail.com</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
                 </div>
             </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Persist.Live. All rights reserved.</p>
+            <div style="margin-top: 3rem; text-align: center; color: var(--text-muted); font-size: 0.875rem;">
+                &copy; 2025 Persist.Live. All rights reserved.
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="js/main.js"></script>
 </body>
+
 </html>
